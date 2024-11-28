@@ -1,0 +1,55 @@
+.one div {
+    background-color: #fff;
+    border: solid 5px #FF5722;
+    margin: 20px auto;
+    padding: 30px;
+    width: fit-content;
+}
+.one div p {
+    text-align: center;
+    background-color: #eee;
+    border-color: inherit;
+    border-width: inherit;
+    border-style: inherit;
+    width: 600px;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+/******************************************/
+.two div {
+    text-transform: capitalize;
+    font-size: 60px;
+    text-align: center;
+}
+.two .ONE {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+}
+.two .TWO {
+    font-family: "Cairo";
+
+    font-weight: 700;
+}
+.two .THREE {
+    font-family: "Jomhuria";
+    font-weight: 400;
+}
+/*****************************************/
+.three div {
+    text-transform: capitalize;
+    font-family: "Cairo";
+    text-align: center;
+    font-weight: 700;
+}
+.three .ONE {
+    font-size: 2.5rem;
+}
+.three .TWO {
+    font-size: 2rem;
+}
+.three .THREE {
+    font-size: 1.5rem;
+}

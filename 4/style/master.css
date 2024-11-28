@@ -1,0 +1,30 @@
+.one {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+.one .parent .child .title {
+    color: red;
+}
+.one .parent .title  {
+    color: blue;
+}
+
+.one .parent p,
+.one .title  {
+    color: green;
+}  
+/************************************/
+
+.two div{
+    max-width: 400px;
+    max-height: 29px;
+    font-size: 20px;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    background-color: #A52A2A;
+    font-family: sans-serif;
+    overflow: hidden;
+}

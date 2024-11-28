@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.one div.main.red {
+  color: red;
+}
+.two .parent > div +.child {
+  color:red
+}
+.three .parent > div:only-child {
+  color: red;
+}
+.four > div[title]:not(.no-need) {
+  color:red
+}
+.five div:not(.no-need) p:only-of-type + div:not(.no-need):only-of-type {
+  color: red;
+}
+.six div:not(.no-need) div:nth-last-of-type(2){
+  color: red;
+}
+.seven div:not(div[class]) h3 + div:not(.no-need):nth-last-child(2) {
+  color: red;
+}
+.eight div :not(:first-child):not(h3):not(:last-child){
+  color: red;
+}

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+.one .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 1fr;
+  gap: 20px;
+}
+.one .grid div {
+  background-color: #607d8b;
+  counter-increment: count;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one .grid div::before {
+  content: "Element " counter(count);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+/**********************************/
+.three .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+}
+.three .grid div {
+  background-color: #403f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+/***********************************/
+.four .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+}
+.four .grid div {
+  background-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Cairo";
+}
+
+.four .grid .one {
+  grid-row-start: 6;
+  grid-column: 1 / span 10;
+}
+.four .grid .two {
+  grid-column: span 6;
+}
+.four .grid .three {
+  grid-column: span 4;
+}
+.four .grid .four {
+  grid-column: span 4;
+}
+.four .grid .five {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+.four .grid .six {
+  grid-column: span 4;
+}
+.four .grid .seven {
+  grid-column: span 4;
+}
+.four .grid .eight {
+  grid-row-start: 1;
+  grid-column: 1 / span 10;
+}
+/***************************************/
+.five .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,auto);
+  align-content: space-between;
+  gap: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.five .grid div {
+  background-color: #E91F63;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}

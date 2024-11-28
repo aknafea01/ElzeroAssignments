@@ -1,0 +1,97 @@
+.one div {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    text-align: center;
+    align-content: center;
+    font-family: "Cairo";
+    font-weight: 600;
+    background-color: #EEEEEE;
+}
+.one div:empty {
+    background-color: #FE000B;
+}
+.two div {
+    width: fit-content;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Cairo";
+    background-color: #D4D4D4;
+}
+.two div::first-letter{
+    width: 40px;
+    height: 300px;
+    padding: 10px 12.5px;
+    margin-left: -40px;
+    margin-right: 15px;
+    color: #ffff;
+    background-color: #FE000B;
+    display: block;
+
+}
+.three {
+    overflow: hidden;
+
+}
+.three p {
+    width: 60%;
+    font-family: "Cairo";
+    margin: 20px 100px 20px 0px;
+    padding: 20px;
+    background-color: #EFEFEF;
+    border-left: 5px solid #E91F63;
+    position: relative;
+    float: right;
+}
+.three p::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -15px;
+    height: 0px;
+    width: 0px;
+    border: 15px solid;
+    border-color: transparent #E91F63 transparent transparent;
+}
+.three p::after {
+    content:attr(data-person);
+    position: absolute;
+    left: -120px;
+    background-color: #DDDDDD;
+    padding: 20px;
+    margin-top: -20px;
+}
+.four p {
+    width: 400px;
+    margin: 20px auto;
+    padding: 12px;
+    font-family: "Cairo";
+    background-color: #EFEFEF;
+    counter-increment: number;
+    position: relative;
+}
+.four p::before {
+    content: counter(number);
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    width: 50px;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    left: -50px;
+    top: 0px;
+}
+.four p::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 4px;
+    background-color: #F44336;
+}

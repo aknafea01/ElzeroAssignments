@@ -1,0 +1,54 @@
+.one {
+    width: 70%;
+    margin: 10px auto;
+}
+.one .clear {
+    clear: both;
+}
+.one .parent {
+    
+    background-color: #eee;
+    width: 800px;
+}
+.one .parent div {
+    background-color: #ddd;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.one .parent .full {
+    float: left;
+    width: calc(100% - 15px * 4);
+}
+.one .parent .ONE {
+    float: left;
+    width: calc((100% - 15px * 12) / 3); /** 3 layers each layer has 2 paddind and 2 margin ********/
+}
+.one .parent .TWO {
+    float: left;
+    width: calc((100% - 15px * 8) / 2); /** 2 layers each layer has 2 paddind and 2 margin ********/
+}
+.one .parent .THREE {
+    float: left;
+    width: calc((100% - 15px * 16) / 4); /** 4 layers each layer has 2 paddind and 2 margin ********/
+}
+.two div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #B3B3B3;
+    color: black;
+  }
+  .two .one {
+    background-color: hsla(0, 0%, 70%, 0.1);
+  }
+  .two .two {
+    background-color: hsla(0, 0%, 70%, 0.1);
+    opacity: 0.1;
+  }

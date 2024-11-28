@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --padding:7px;
+    --commonBgColor:#DDDDDD;
+    --borderRad:5px;
+}
+.one div {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0px 0px 0px #FF5722,-5px 0px 0px 0px #03A9F4;
+    color: #FF5722;
+    padding: 20px;
+    font-family: "Cairo";
+    font-weight: bold;
+    font-size: 1rem;
+}
+/***************************************/
+.two .parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    color:white;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 15px;
+    justify-content: space-between;
+    font-family: "Cairo";
+    font-weight: bold;
+    font-size: 1rem;
+}
+.two .parent div {
+    flex-basis: calc((100% - var(--padding) * 3) / 3);
+    padding: var(--padding);
+    background-color: #F44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/************************************/
+.three .parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: var(--padding);
+    font-family: "Cairo";
+    font-weight: bold;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+.three .parent div {
+    flex-basis: calc((100% - var(--padding) * 6) / 3);
+    padding: var(--padding);
+    background-color: #607D8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three .parent .two {
+    order: 5;
+}
+.three .parent .one {
+    order: 6;
+    align-self: flex-end;
+}
+.three .parent .three {
+    order: 2;
+    align-self: flex-start;
+}
+.three .parent .four {
+    order: 3;
+}
+.three .parent .five {
+    order: 4;
+}
+.three .parent .six {
+    order: 1;
+}
+/***********************************/
+.four .parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    color: white;
+    padding: var(--padding);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.four .parent div {
+    flex-basis: calc((100% - var(--padding)) / 3);
+    padding: calc(var(--padding) * 3);
+    background-color: #0D9688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four .parent .two {
+    align-self: flex-start;
+    width: 50%; 
+}
+/************************************************/
+.five .parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 20px auto;
+    color: white;
+}
+.five .parent div {
+    flex-basis: calc((100% - var(--padding) * 32) / 4);
+    padding: calc(var(--padding) * 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.five .parent .one {
+    background-color: #FF9702;
+
+}
+.five .parent .two {
+    background-color: #8BC34A;
+    align-self: flex-end;   
+}
+.five .parent .three {
+    background-color: #795548;
+}
+.five .parent .four {
+    background-color: #673AB7;
+    align-self: flex-end;
+    order: -1;
+}
+/*******************************************/
+.six .page {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--borderRad);
+    padding: var(--padding);
+    background-color: #eee;
+    margin: 20px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.six .page .header {
+    display: flex;
+    padding: var(--padding);
+    justify-content: space-between;
+}
+.six .page .logo {
+    background-color: var(--commonBgColor);
+    padding: var(--padding);
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRad);
+}
+.six .page .links {
+    background-color: var(--commonBgColor);
+    padding: var(--padding);
+    padding: 0px;;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-basis: calc(100% - var(--padding) * 3 - 100px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: var(--borderRad);
+}
+.six .page .links li {
+    margin: 0px calc(var(--padding));
+    cursor: pointer;
+}
+.six .page .main-area {
+    
+    display: flex;
+    height: 500px;
+    padding: var(--padding);
+    justify-content: space-between;
+
+}
+.six .page .main-area .content { 
+    background-color: var(--commonBgColor);
+    flex-basis: 70%;
+    padding: calc(var(--padding) * 2);
+    display: flex;
+    justify-content: flex-start;    
+    border-radius: var(--borderRad);
+}
+.six .page .main-area .sidebar { 
+    background-color: var(--commonBgColor);
+    flex-basis: calc(100% - 70% - var(--padding) * 3);
+    padding: calc(var(--padding) * 2);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: var(--borderRad);    
+}
+.six .page .footer {
+    display: flex;
+
+    border-radius: var(--borderRad);
+    padding: var(--padding);
+    justify-content: space-between;
+    align-items: center;
+
+}
+.six .page .footer .copyright {
+    background-color: var(--commonBgColor);
+    border-radius: var(--borderRad);
+    padding: var(--padding);
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.six .page .footer .design {
+    background-color: var(--commonBgColor);
+    border-radius: var(--borderRad);
+    padding: var(--padding);
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

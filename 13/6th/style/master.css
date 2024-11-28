@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+.six .grid {
+  height: 99vh;
+  width: 99%;
+  margin: 0.5vh auto;
+  background-color: #eee;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  padding: 50px;
+  font-family: sans-serif;
+  gap: 20px;
+  border-radius: 5px;
+}
+.six .grid .person,
+.six .grid .bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+.six .grid .job {
+  color: gray;
+}
+.six .grid div {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 30px 30px auto auto;
+  justify-content: space-between;
+  border-radius: 4px;
+  position: relative;
+}
+.six .grid div::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background-color: #FF3D09;
+}
+.six .grid span {
+  font-size: 16px;
+}
+.six .grid .white {
+  background-color: white;
+  color: black;
+}
+.six .grid .black {
+  background-color: black;
+  color: white;
+}
+.six .grid .one {
+  grid-column: span 6;
+  grid-row: span 4;
+}
+.six .grid .two {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+.six .grid .three {
+  grid-column: span 3;
+  grid-row: span 10;
+}
+.six .grid .four {
+  grid-column: span 3;
+  grid-row: span 6;
+}
+.six .grid .five {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+.six .grid .six {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+/************3rd**************/
+.six .grid .seven {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.six .grid .eight {
+  grid-column: span 3;
+  grid-row: span 2;
+}.six .grid .nine {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.six .grid .ten {
+  grid-column: span 3;
+  grid-row: span 2;
+}

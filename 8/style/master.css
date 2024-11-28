@@ -1,0 +1,193 @@
+
+.one {
+    position: relative;
+    height: 200px;
+    top: 0px;
+    left: calc(50% - 100px);
+}
+.one div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.one .red {
+    background-color: #F44336;
+    left:60px ;
+    top: 40px;
+    z-index: 3;
+}
+.one .green {
+    background-color: #0D9688;
+    left:40px ;
+    top: 20px;
+    z-index: 2;
+}
+.one .blue {
+    background-color: #03A9F4;
+    left:20px ;
+    top: 0px;
+    z-index: 1;
+}
+.one .black {
+    background-color: #333333;
+    left:20px ;
+    top: 20px;
+    z-index: -1;
+}
+/****************************************************/
+
+.two div {
+    width: 400px;
+    margin: 0px auto ;
+    padding: 26px;
+    font-family: "Cairo";
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 26px;
+    color: #020854;
+    background-color: #EEEEEE;
+    position: relative;
+    border-color:#F44336 #2196F3 ;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+}
+.two span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    position: absolute;
+}
+.two .top-left {
+    top: -11px;
+    left: -20px;
+    border-right: #F44336 solid 2px;
+}
+.two .top-right {
+    top: -11px;
+    right: -20px;
+    border-left: #F44336 solid 2px;
+}
+.two .bottom-left {
+    bottom: -11px;
+    left: -20px;
+    border-right: #F44336 solid 2px;
+}
+.two .bottom-right {
+    bottom: -11px;
+    right: -20px;
+    border-left: #F44336 solid 2px;
+}
+/****************************************************/
+
+
+.three {
+    position: relative;
+    left: calc(50% - 200px);
+}
+/***********Reset list********************/
+.three ul {
+    list-style: none;
+    padding: 0px;
+    width: 400px;
+}
+
+.three ul li ol,
+.three ul li ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.three ul li ol li,
+.three ul li ul li{
+    padding: 0px;
+    margin: 0px;
+}
+/**************************************/
+
+.three ul li {
+    margin: 30px 0px;
+    padding: 8px;
+    background-color: #EEEEEE;
+    font-family: sans-serif;
+}
+.three ul li ol,
+.three ul li ul{
+    padding: 12px;
+
+    width: auto;
+}
+.three ul li ol li,
+.three ul li ul li{
+    padding: 5px 12px;
+    margin: 4px;
+    background-color: #FFFFFF;
+    
+}
+.three ul li .first li {
+    list-style: decimal outside;
+    margin-left:19px ;
+}
+.three ul li .second li {
+    list-style: upper-roman outside;
+    margin-left:19px ;
+}
+.three ul li ul li {
+    list-style: circle  inside;
+}
+/*******************************************************************************/
+.four table {
+    width: 700px;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    left: calc(50% - 350px);
+    border-spacing: 0px;
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #0D9688;
+}
+.four table thead tr td{
+    background-color: #404040;
+    border: 1px solid #FFFFFF;
+    color: #EDEDF4;
+    padding: 10px;
+    font-weight: bold;
+}
+.four table tbody tr td{
+    padding: 10px;
+}
+.four table tbody tr td img {
+    padding: 2px;
+    width: 50px;
+    border: 1px solid #FFFFFF;
+    outline: 1px solid #FFFFFF;
+}
+.four table tbody tr td {
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+
+.four .control {
+    list-style: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: block;
+    width: 70px;
+}
+.four .view {
+    position: absolute;
+    right: 90px;
+    bottom: 40%;
+    background-color: #03A9F4;
+    padding: 3px 5px;
+}
+.four .delete {
+    position: absolute;
+    right: 30px;
+    bottom: 40%;
+    background-color: #E91F63;
+    padding: 3px;
+}

@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color:#ddd;
+}
+.parent {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: blue;
+
+}
+.parent > div {
+  width: 500px;
+  height: 500px;
+  color: inherit;
+  background-color: #eee;
+}
+.center-flex {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.center-position {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.circle-100 {
+  width: 100px !important; 
+  height: 100px !important;
+  border-radius: 50%;
+}
+.circle-200 {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+}
+.trial div{
+  width: 500px;
+  padding: 30px;
+  margin: 50px auto;
+  position: relative;
+  background-color: var(--color);
+} 
+/*********Sadly after and before can't be inherit directly but we can use variables****************/
+.arrow::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border:20px solid;
+  border-color: transparent transparent transparent transparent;
+}
+.bottom::before {
+  border-color: var(--color) transparent transparent transparent;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -20px;
+}
+.left::before {
+  border-color: transparent var(--color) transparent transparent;
+  left: -40px;
+  top: 50%;
+  margin-top: -20px;
+}
+.right::before {
+  border-color: transparent transparent transparent var(--color);
+  right: -40px;
+  top: 50%;
+  margin-top: -20px;
+}
+.top::before {
+  border-color: transparent transparent  var(--color) transparent;
+  top: -40px;
+  left: 50%;
+  margin-left: -20px;
+}

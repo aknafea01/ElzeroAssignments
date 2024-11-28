@@ -1,0 +1,49 @@
+.one {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+.one div {
+    background-color: #eee;
+    color: black;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 1em;
+    display: inline-block;
+    outline: black solid 5px ;
+}
+.one .shape-1 {
+    border: red solid 5px;
+}
+.one .shape-2 {
+    border: solid 5px ;
+    border-color: blue green;
+}
+.one .shape-3 {
+    border-style: dashed;
+    border-width: 5px;
+    border-color: red green blue yellow;
+}
+/************************************************/
+.two {
+    width: 35%;
+    margin: 30px auto;
+}
+.two div {
+    background-color: #eee;
+    width: 400px;
+    font-family: sans-serif;
+    color: black;
+    outline: solid #eee 20px;
+    margin: 20px;
+    padding: 20px 20px;
+}
+.two .element-1 {
+    border-left: solid 10px #E91F63 ;
+}
+.two .element-2 {
+    visibility: hidden;
+}
+.two .element-3 {
+    border-left: solid 10px #0D9688 ;
+}

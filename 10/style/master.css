@@ -1,0 +1,133 @@
+    *{
+        box-sizing: border-box;
+    }
+    .one {
+        width: 80%;
+        margin:40px auto;
+        text-align: center;
+    }
+    .one div {
+        width: 100px;
+        height: 100px;
+        background-color: #EEEEEE;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 20px;
+        border: 2px solid black;
+        box-shadow: 5px 5px 0px 0px #2196F3, -5px -5px 0px 0px #E91F63 ;
+        position: relative;
+        counter-increment: count;
+    }
+    .one div::before {
+        content: "Element";
+        position: absolute;
+        top: 50px;
+        margin-top: -17px;
+        right: 50px;
+        margin-right: -28.46px;
+        font-family: "cairo";
+        font-weight: 600px;
+    }
+    .one div::after {
+        content: counter(count);
+        position: absolute;
+        color: #FFF9E7;
+        background-color: #000000;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 0px;
+        font-family: "cairo";
+        text-align: center;
+        align-content: center;
+        margin-top: -15px;
+        right: 50%;
+        margin-right: -15px;
+    }
+    /*******************************************/
+    .two div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        left: 50%;
+        margin-left: -50px;
+        background-color: #EFEFEF;
+        border-top-left-radius: 8px 12px;
+        border-bottom-right-radius: 8px 12px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.87);
+    }
+/**********************************************/
+.three {
+    width: 80%;
+    margin: 450px auto;
+    text-align: center;
+}
+.three .parent {
+    width: 550px;
+    margin: 20px auto;
+    overflow: hidden;
+    font-family: "Cairo";
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+}
+.three .parent .p-basic,
+.three .parent .p-pro {
+    background-color: #EEEEEE;
+    height: 300px;
+    float: left;
+    margin: 0px 30px;
+    width: calc( (100% - 30px * 4) / 2); 
+    position: relative;
+}
+
+.three .parent .p-basic .basic,
+.three .parent .p-pro .pro {
+    background-color: #DDDDDD ;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 80px;
+    align-content: center;
+
+}
+
+.three .parent .p-basic .basic::after,
+.three .parent .p-pro .pro::after {
+    content: attr(data-set);
+    position: absolute;
+    color: #ffff;
+    top: 25px;
+    left: 50%;
+    margin-left: -40%;
+    background-color: #03A9F4;
+    width: 80%;
+    border-radius: 5px;
+}
+.three .parent .ruler    {
+    position: absolute;
+    left: 50%;
+    width: 1.5px;
+    height: 100%;
+    background-color: #03A9F4;
+}
+.three .parent .ruler::before {
+    content: "Or";
+    position: absolute;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #03A9F4;
+    color: #ffff;
+
+    left: -14px;
+    top: 50%;
+    margin-top: -12.5px;
+    border-radius: 50%;
+}
